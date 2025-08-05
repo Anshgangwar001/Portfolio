@@ -6,13 +6,22 @@ import { cibLeetcode } from "@coreui/icons";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between py-6">
+    <nav className="flex items-center justify-between py-6 px-6 lg:px-20">
+      {/* Logo */}
       <div className="flex flex-shrink-0 items-center">
         <a href="/" aria-label="Home">
-          <img src={logo} className="mx-2" width={70} height={53} alt="Logo" />
+          <img
+            src={logo}
+            className="mr-2"
+            width={70}
+            height={53}
+            alt="Logo"
+          />
         </a>
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+
+      {/* Social Links */}
+      <div className="flex items-center gap-4 text-2xl">
         <a
           href="https://www.linkedin.com/in/anshgangwar01/"
           target="_blank"
@@ -42,11 +51,9 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LeetCode"
-          className="text-white text-2xl"
         >
           <CIcon
             icon={cibLeetcode}
-            className="text-white"
             style={{
               width: "28px",
               height: "28px",
@@ -54,8 +61,6 @@ const Navbar = () => {
             }}
           />
         </a>
-
-
       </div>
     </nav>
   );
