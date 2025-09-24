@@ -1,8 +1,8 @@
 import project1 from "../assets/projects/lms.jpg";
 // import project2 from "../assets/projects/movie.jpg";
-import project3 from "../assets/projects/classroom.jpg";
+import project2 from "../assets/projects/football.jpg";
 import project4 from "../assets/projects/portfolio.jpg";
-import project5 from "../assets/projects/projectCashFlow.jpg"
+import project5 from "../assets/projects/projectCashFlow.jpg";
 
 export const HERO_CONTENT = `Final-year B.Tech (CSE) student at JIIT Noida with a passion for building scalable, user-centric web applications. I have hands-on experience in developing responsive UIs and full-stack applications using React.js, Node.js, Express, and MongoDB (MERN stack).
 I'm currently seeking frontend or full-stack web development roles where I can contribute to impactful user experiences and grow alongside industry professionals. I bring a solid foundation in DSA, problem solving, and real-world coding practices, along with a strong willingness to learn and adapt..`;
@@ -46,7 +46,14 @@ export const PROJECTS = [
     image: project1,
     description:
       "A full-stack LMS with role-based access (Admin, Instructor, Student), Stripe integration, analytics dashboard, and advanced authentication (JWT, MFA). Improved course navigation and decision-making with data visualization.",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe", "JWT"],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe",
+      "JWT",
+    ],
   },
   // {
   //   title: "ShowXperience: Movie Ticket Booking App",
@@ -56,30 +63,43 @@ export const PROJECTS = [
   //   technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe", "Redux"],
   // },
   {
+    title: "Cash Flow Minimizer",
+    image: project5, // replace with your actual imported image variable
+    description:
+      "A C++ program that reduces the number of transactions required to settle debts within a group. It computes net balances for each participant, then uses a greedy algorithm (max creditor vs max debtor) with priority queues to match payments until all balances are settled. Designed for efficiency and clarity, with attention to edge-cases and performance for large groups.",
+    technologies: [
+      "C++",
+      "STL (priority_queue, vector, map)",
+      "Greedy Algorithms",
+      "Graphs/Netting",
+      "CMake (optional)",
+      "Unit tests",
+    ],
+  },
+  {
+  title: "Football Team Detection System",
+  image: project2, // replace with your actual imported image variable
+  description:
+    "A computer vision system that detects football players in match videos, tracks their movements, and classifies them into teams. Uses YOLO for player detection, DeepSORT for tracking, and jersey-color analysis (or CNN) for team identification. Outputs an annotated video with consistent IDs and team labels.",
+  technologies: [
+    "Python",
+    "YOLOv8",
+    "DeepSORT",
+    "OpenCV",
+    "scikit-learn",
+    "Perspective Transformation"
+  ],
+},
+
+  {
     title: "Portfolio Website",
     image: project4,
     description:
       "A responsive portfolio website to showcase personal projects, skills, and contact info, built using React and modern design practices.",
     technologies: ["HTML", "CSS", "React", "JavaScript"],
   },
-   {
-  title: "Cash Flow Minimizer",
-  image: project5, // replace with your actual imported image variable
-  description:
-    "A C++ program that reduces the number of transactions required to settle debts within a group. It computes net balances for each participant, then uses a greedy algorithm (max creditor vs max debtor) with priority queues to match payments until all balances are settled. Designed for efficiency and clarity, with attention to edge-cases and performance for large groups.",
-  technologies: ["C++", "STL (priority_queue, vector, map)", "Greedy Algorithms", "Graphs/Netting", "CMake (optional)", "Unit tests"]
-}
-,
- {
-    title: "Code Catalyst: Code Evaluation Platform",
-    image: project3,
-    description:
-      "Developed a platform for automating coding assignments and grading. Enabled assignment creation, test case-based grading, real-time feedback, and ensured a standardized coding environment.",
-    technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
-  }
- ,
+  
 ];
-
 
 export const CONTACT = {
   address: "Sector 104 , Noida",
